@@ -32,7 +32,7 @@ public class Main {
             deliveryDays++;
         }
         if (distance > 100) {
-            deliveryDays = 0;
+            deliveryDays = -1; // no delivery to that area
         }
         return deliveryDays;
     }
@@ -58,7 +58,7 @@ public class Main {
 
     // Метод для задачи: homeworkConditionals -> Task4
     public static void Task3() {
-        int deliveryDistance = 750;
+        int deliveryDistance = 21;
         int deliveryDays = calcDeliveryDays(deliveryDistance);
 
         if (deliveryDays > 0) {
